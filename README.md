@@ -1,6 +1,7 @@
 # Portfolio Nicolas
 
-Ce dépôt contient une version simplifiée d'un portfolio professionnel. Il s'appuie sur un fichier `index.html` et une feuille de style `style.css`.
+Ce dépôt contient le code d'un petit site portfolio responsive construit en HTML et CSS.
+Il est composé d'un fichier `index.html` et de la feuille de style `style.css`.
 
 ## Palette de couleurs
 - **Bleu foncé** : `#003366`
@@ -8,16 +9,21 @@ Ce dépôt contient une version simplifiée d'un portfolio professionnel. Il s'a
 - **Fond clair** : `#fdfdfd`
 
 ## Typographie
-La police principale utilisée est [Inter](https://fonts.google.com/specimen/Inter) pour un rendu moderne et lisible. Elle est chargée via Google Fonts.
+La police principale est [Inter](https://fonts.google.com/specimen/Inter), chargée via Google Fonts pour un rendu moderne.
 
-## Bibliothèques d'animation suggérées
-- [AOS](https://michalsnik.github.io/aos/) pour les effets au défilement (déjà intégré dans `index.html`).
+## Bibliothèques d'animation
+- [AOS](https://michalsnik.github.io/aos/) pour les animations au défilement (déjà intégrée).
 - [GSAP](https://gsap.com/) ou [Lottie](https://airbnb.io/lottie/#/) pour des animations avancées.
 
-## Aperçu rapide
-1. **Header** avec une image de couverture et un slogan.
-2. **Navigation** permettant d'accéder aux sections "Profil", "Expériences", "Projets" et "Contact".
-3. **Icônes** Font Awesome pour illustrer chaque partie.
-4. **Responsive** grâce à un design flexible et des polices fluides.
+## Aperçu des sections
+1. **Header** avec image de couverture, slogan et navigation collante.
+2. **Profil**, **Expériences**, **Compétences** et **Projets** illustrés par des icônes.
+3. **Contact** avec liens externes et informations principales.
 
-Ce projet peut servir de base pour un portfolio plus poussé : intégration d'animations SVG, de maquettes de projets et de liens vers vos réalisations.
+## Lancer le site depuis GitHub
+1. Forkez ou clonez ce dépôt sur votre compte.
+2. Dans les paramètres du dépôt GitHub, rendez-vous dans l'onglet **Pages**.
+3. Sélectionnez la branche à publier (généralement `main` ou `work`) puis validez.
+4. GitHub génère une URL du type `https://<votre_utilisateur>.github.io/<nom_du_depot>/` permettant d'accéder au site.
+
+Pour un test rapide en local, il suffit d'ouvrir `index.html` dans votre navigateur.
