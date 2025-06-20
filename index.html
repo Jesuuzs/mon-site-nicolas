@@ -4,100 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Nicolas Delaplace</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #fdfdfd, #e9f0ff);
-      color: #222;
-    }
-    header {
-      background: url('Etude%20de%20cas.jpg') no-repeat center/cover;
-      color: white;
-      padding: 6em 1em 3em;
-      text-align: center;
-      animation: fadeInDown 1s ease;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    }
-    header p {
-      font-size: 1.3em;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    }
-    nav {
-      background: #003366;
-      display: flex;
-      justify-content: center;
-      gap: 2em;
-      padding: 1em;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00bfff;
-    }
-    main {
-      max-width: 1000px;
-      margin: 3em auto;
-      padding: 2em;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
-      animation: fadeInUp 1.2s ease;
-    }
-    section {
-      margin-bottom: 3em;
-    }
-    h2 {
-      border-left: 6px solid #00bfff;
-      padding-left: 1em;
-      margin-bottom: 1em;
-      color: #003366;
-    }
-    ul li {
-      padding: 0.5em 0;
-      border-bottom: 1px solid #eee;
-    }
-    footer {
-      text-align: center;
-      padding: 2em;
-      background: #002244;
-      color: #fff;
-      font-size: 0.9em;
-    }
-    .card {
-      background: #f5faff;
-      border-left: 4px solid #00bfff;
-      padding: 1em;
-      margin: 1em 0;
-      border-radius: 8px;
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Nicolas Delaplace</h1>
-    <p>Business Developer | Développeur IA | Art & Musique</p>
+    <p>Business Developer &mdash; Développeur IA</p>
   </header>
 
   <nav>
@@ -108,18 +25,22 @@
   </nav>
 
   <main>
-    <section id="profil">
-      <h2>Profil</h2>
+    <section id="profil" data-aos="fade-up">
+      <h2><i class="fas fa-user icon" aria-hidden="true"></i>Profil</h2>
       <div class="card">
-        <p>Actuellement en Mastere Business Developer à Junia, je combine stratégie commerciale, marketing digital et passion pour l’innovation. Mes expériences me permettent d’accompagner les entreprises sur la prospection, l’automatisation via le CRM, la création de contenus et le pilotage de KPI. En parallèle, je développe des outils numériques et crée des contenus artistiques mêlant IA, graphisme et musique.</p>
+        <p>Actuellement en Mastère Business Developer à Junia, je combine stratégie commerciale,
+           marketing digital et passion pour l&rsquo;innovation. Mes expériences me permettent
+           d&rsquo;accompagner les entreprises sur la prospection, l&rsquo;automatisation via le CRM,
+           la création de contenus et le pilotage de KPI. En parallèle, je développe des outils
+           numériques et crée des contenus artistiques mêlant IA, graphisme et musique.</p>
       </div>
     </section>
 
-    <section id="experiences">
-      <h2>Expériences</h2>
+    <section id="experiences" data-aos="fade-up" data-aos-delay="100">
+      <h2><i class="fas fa-briefcase icon" aria-hidden="true"></i>Expériences</h2>
       <div class="card">
         <strong>OS Consultech</strong> (2024-2025) — Alternant Business Developer<br>
-        Développement commercial, stratégie CRM, communication digitale, organisation d’événements.
+        Développement commercial, stratégie CRM, communication digitale, organisation d&rsquo;événements.
       </div>
       <div class="card">
         <strong>SOCOTEC</strong> (2021-2023) — Alternant Diagnostiqueur Immobilier<br>
@@ -131,18 +52,18 @@
       </div>
     </section>
 
-    <section id="projets">
-      <h2>Projets en cours</h2>
+    <section id="projets" data-aos="fade-up" data-aos-delay="200">
+      <h2><i class="fas fa-lightbulb icon" aria-hidden="true"></i>Projets en cours</h2>
       <ul>
         <li>App de prospection automatisée intégrée à Zoho CRM</li>
-        <li>Série de podcasts IA & Marketing sur TikTok</li>
+        <li>Série de podcasts IA &amp; Marketing sur TikTok</li>
         <li>Portfolio artistique (illustration + animation audio)</li>
         <li>Mini outils web : générateur de citation, blog markdown, gestionnaire de tâches IA</li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" data-aos="fade-up" data-aos-delay="300">
+      <h2><i class="fas fa-envelope icon" aria-hidden="true"></i>Contact</h2>
       <p>Email : <a href="mailto:nicolas.delaplace31@gmail.com">nicolas.delaplace31@gmail.com</a></p>
       <p>Téléphone : 07.70.00.46.70</p>
       <p>LinkedIn : <a href="https://www.linkedin.com/in/nicolas.delaplace" target="_blank">linkedin.com/in/nicolas.delaplace</a></p>
@@ -151,7 +72,13 @@
   </main>
 
   <footer>
-    &copy; 2025 Nicolas Delaplace — Portfolio créatif et technique propulsé par HTML & GitHub Pages
+    &copy; 2025 Nicolas Delaplace — Portfolio créatif et technique propulsé par HTML &amp; GitHub Pages
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+    // Pour des animations plus avancées, vous pouvez intégrer Lottie ou GSAP ici.
+  </script>
 </body>
 </html>
